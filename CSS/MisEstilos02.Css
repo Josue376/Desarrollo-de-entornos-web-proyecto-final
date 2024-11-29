@@ -1,0 +1,208 @@
+/* Encabezado */
+header {
+    background-color: #005a00; /* Verde característico de fútbol */
+    color: rgb(5, 5, 5);
+    padding: 30px;
+    text-align: center;
+}
+
+/* Título de la página */
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Estilos globales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f4f4f4, #e2e2e2); /* Fondo con degradado */
+    color: #333; /* Color del texto principal */
+}
+
+/* Barra de búsqueda */
+.search-bar {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; /* Color de fondo */
+    border-radius: 30px; /* Bordes redondeados más pronunciados */
+    padding: 5px 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Sombra más destacada */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.search-bar:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25); /* Sombra más profunda al pasar el ratón */
+    background-color: #f8f8f8; /* Cambio de color al pasar el ratón */
+}
+
+.search-bar input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none; /* Fondo transparente */
+    transition: padding 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+    padding-left: 12px; /* Anima el espacio al hacer foco */
+    border-bottom: 2px solid #007bff; /* Resalta el borde inferior */
+}
+
+.search-bar .search-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    opacity: 0.7;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.search-bar:hover .search-icon {
+    transform: scale(1.1); /* Efecto de aumento en el ícono */
+    opacity: 0.9;
+}
+
+/* Placeholder animado */
+.search-bar input[type="text"]::placeholder {
+    color: #aaa;
+    transition: color 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus::placeholder {
+    color: #007bff; /* Color del placeholder cambia al hacer foco */
+}
+
+
+/* Estilos de los iconos de redes sociales */
+.social-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-icons a img {
+    width: 40px; /* Tamaño de los iconos más grande */
+    margin: 0 10px; /* Espaciado entre iconos */
+    transition: transform 0.3s; /* Transición suave al hover */
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2); /* Efecto de aumento al pasar el mouse */
+}
+
+/* Estilos del formulario de inicio de sesión */
+.login-form {
+    background: #fff; /* Fondo blanco para el formulario */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 10px; /* Bordes más redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra del formulario */
+    border: 2px solid #0c0c0c;; /* Borde del formulario */
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0e4602; /* Color del título del formulario */
+    font-size: 24px; /* Tamaño de fuente más grande */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espaciado entre grupos de formularios */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555; /* Color de las etiquetas */
+    font-weight: bold; /* Negrita para las etiquetas */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 6px;
+    border: 2px solid #ccc;; /* Bordes de los campos de entrada */
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Transición suave del borde */
+}
+
+.form-group input:focus {
+    border-color: #007BFF; /* Cambia el color del borde al enfocar */
+    outline: none; /* Elimina el contorno por defecto */
+}
+
+/* Estilos del botón principal */
+.btn-primary {
+    background-color: #007BFF; /* Color del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    padding: 12px; /* Mayor espacio para un botón más atractivo */
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.3s; /* Transiciones para el hover */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Color al pasar el mouse */
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+/* Estilos de las opciones de recordar */
+.remember-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px; /* Espaciado entre las opciones */
+}
+
+.remember a {
+    font-size: 14px;
+    color: #007BFF; /* Color de los enlaces */
+    text-decoration: none;
+    transition: color 0.3s; /* Transición para el hover */
+}
+
+.remember a:hover {
+    text-decoration: underline; /* Subrayar el enlace al pasar el mouse */
+}
+
+/* Estilos del pie de página */
+.footer-content {
+    background: #0e4602; /* Color de fondo del pie de página */
+    color: #0f0f0f; /* Color del texto del pie de página */
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px; /* Espaciado superior del pie de página */
+    position: relative;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Sombra superior del pie */
+}
+
+.footer-links {
+    margin-bottom: 10px; /* Espaciado entre enlaces */
+}
+
+.footer-links a {
+    color:#0f0f0f; /* Color del texto de los enlaces */
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s; /* Transición para el hover */
+}
+
+.footer-links a:hover {
+    color: #0056b3; /* Color del enlace al pasar el mouse */
+}
+
+.contact-info {
+    font-size: 0.9em; /* Tamaño de fuente del contacto */
+    margin-bottom: 10px; /* Espaciado inferior */
+}

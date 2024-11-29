@@ -1,0 +1,226 @@
+/* Estilos globales */ 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo neutro para destacar contenido */
+}
+
+/* Encabezado */
+header {
+    background-color: #005a00; /* Verde característico de fútbol */
+    color: rgb(5, 5, 5);
+    padding: 50px;
+    text-align: center;
+    
+}
+
+/* Título de la página */
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Estilos de botones */
+.auth-buttons {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px; /* Tamaño de fuente de botones */
+}
+
+.login-btn {
+    background-color: #2d89ef; /* Azul */
+}
+
+.signup-btn {
+    background-color: #32cd32; /* Verde */
+}
+
+/* Barra de búsqueda */
+.search-bar {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; /* Color de fondo */
+    border-radius: 30px; /* Bordes redondeados más pronunciados */
+    padding: 5px 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Sombra más destacada */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.search-bar:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25); /* Sombra más profunda al pasar el ratón */
+    background-color: #f8f8f8; /* Cambio de color al pasar el ratón */
+}
+
+.search-bar input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none; /* Fondo transparente */
+    transition: padding 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+    padding-left: 12px; /* Anima el espacio al hacer foco */
+    border-bottom: 2px solid #007bff; /* Resalta el borde inferior */
+}
+
+.search-bar .search-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    opacity: 0.7;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.search-bar:hover .search-icon {
+    transform: scale(1.1); /* Efecto de aumento en el ícono */
+    opacity: 0.9;
+}
+
+/* Placeholder animado */
+.search-bar input[type="text"]::placeholder {
+    color: #aaa;
+    transition: color 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus::placeholder {
+    color: #007bff; /* Color del placeholder cambia al hacer foco */
+}
+
+
+/* Iconos de redes sociales */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centrar iconos */
+    margin: 10px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 40px; /* Tamaño de iconos de redes sociales */
+    height: 40px;
+}
+
+/* Centrar la imagen de bienvenida en el contenedor principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra la imagen horizontalmente */
+    justify-content: center; /* Centra la imagen verticalmente */
+    min-height: 80vh; /* Ajusta el tamaño del espacio de visualización */
+    text-align: center;
+    padding: 20px;
+}
+
+.contenedor img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho de la pantalla */
+    height: auto;
+}
+
+/* Texto descriptivo */
+p {
+    font-family: 'Lora', serif; /* Fuente serif elegante */
+    font-size: 16px;
+    color: #0f0f0f;
+    text-align: center; /* Centrar el texto descriptivo */
+    padding: 0 20px; /* Añadir espacio lateral */
+}
+
+/* Estilos para el botón de menú */
+.menu-icon {
+    position: absolute;
+    top: 40px; /* Ajusta la distancia desde la parte superior */
+    right: 52px; /* Ajusta la distancia desde el lado derecho */
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s; /* Transición suave del fondo */
+}
+
+.menu-icon:hover {
+    background-color: #555; /* Efecto hover del botón de menú */
+}
+
+/* Estilos del menú desplegable */
+.menu {
+    display: none; /* Ocultar el menú por defecto */
+    position: absolute;
+    top: 13%;
+    right: 16px;
+    flex-direction: column; /* Coloca los elementos en columna */
+    background-color: #fff; /* Color de fondo del menú */
+    margin: 10px 0;
+    border: 2px solid #0e4602; /* Borde destacado del menú */
+    border-radius: 5px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); /* Sombra del menú */
+    z-index: 1000; /* Asegura que el menú esté en la parte superior */
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    color: #333; /* Color del texto del menú */
+    text-decoration: none;
+    transition: background 0.3s, padding 0.3s; /* Transiciones para hover */
+}
+
+.menu a:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el mouse */
+    padding-left: 20px; /* Efecto de desplazamiento al pasar el mouse */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color:#005a00;
+    color: #0f0f0f;
+    text-align: center;
+    height: 350px;
+    padding: 10px 0;
+    margin-top: auto;
+
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Estructura en columna */
+    align-items: center; /* Centrar elementos */
+}
+
+.footer-links a {
+    color:  #0f0f0f;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+.contact-info, .copyright {
+    margin: 10px 0;
+}    
